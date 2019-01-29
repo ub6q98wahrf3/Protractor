@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Protractor/spec2.js&apos; to &apos;ElementBasics.js&apos;" description="Rename resource &apos;spec2.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="spec2.js" name="ElementBasics.js" stamp="1548728829940" updateReferences="true"/>
+</session>
