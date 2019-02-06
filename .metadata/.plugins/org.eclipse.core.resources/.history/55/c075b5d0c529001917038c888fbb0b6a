@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+
+describe('Optimized_06_07', function(){
+	function Add(a, b){
+		element(by.model("first")).sendKeys(a);
+		element(by.model("second")).sendKeys(b);
+		
+		element(by.id("gobutton")).click();
+	}
+	
+	it('Test Script 1', function(){
+		
+	})
+})

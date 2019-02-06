@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+
+describe('Chain Locators', function(){
+	it('Test Script 1', function(){
+		
+		/*
+		 * Get navigated to the following site: https://jasmine.github.io/2.0/introduction.html
+		 */
+		browser.get("https://jasmine.github.io/2.0/introduction.html");
+		/*
+		 * Enter first 
+		 */
+	})
+})

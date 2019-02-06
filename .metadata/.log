@@ -538,3 +538,118 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.core.net 1 0 2019-01-29 07:55:20.126
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2019-01-30 08:06:00.226 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-01-30 08:06:14.857
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2019-02-02 17:47:25.596 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-02-02 17:47:35.961
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2019-02-03 01:05:11.587 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-02-03 01:07:13.611
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY tern.eclipse.ide.core 4 0 2019-02-03 01:20:55.325
+!MESSAGE TernError: Position 1478 is outside of file.
+!STACK 0
+tern.TernException: TernError: Position 1478 is outside of file.
+	at tern.server.TernExceptionFactory.create(TernExceptionFactory.java:27)
+	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:94)
+	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:238)
+	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:204)
+	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:45)
+	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wst.jsdt.ui 4 0 2019-02-03 01:39:57.914
+!MESSAGE dr: [0:520] doc: [520] 
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.computePartitioning(AbstractDocument.java:1318)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.computePartitioning(SynchronizableDocument.java:257)
+	at org.eclipse.jface.text.TextUtilities.computePartitioning(TextUtilities.java:433)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JavascriptValidationStrategy.computePartitioning(JavascriptValidationStrategy.java:161)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JavascriptValidationStrategy.computePartitioning(JavascriptValidationStrategy.java:141)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JavascriptValidationStrategy.reconcile(JavascriptValidationStrategy.java:94)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptValidationStrategy.reconcile(JavascriptValidationStrategy.java:96)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:98)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-02-03 01:59:08.823
+!MESSAGE source not specified
+!STACK 0
+java.lang.IllegalStateException: source not specified
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:644)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JSDTSourceValidator.validateFile(JSDTSourceValidator.java:226)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JSDTSourceValidator.validateDelta(JSDTSourceValidator.java:204)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JSDTSourceValidator.validate(JSDTSourceValidator.java:100)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:692)
+!SESSION 2019-02-03 22:14:13.835 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-02-03 22:14:28.805
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.wst.jsdt.core 4 4 2019-02-03 22:19:45.038
+!MESSAGE null
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.internalCreateAST(ASTParser.java:905)
+	at org.eclipse.wst.jsdt.core.dom.ASTParser.createAST(ASTParser.java:675)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JSDTSourceValidator.validateFile(JSDTSourceValidator.java:226)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JSDTSourceValidator.validateDelta(JSDTSourceValidator.java:204)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JSDTSourceValidator.validate(JSDTSourceValidator.java:100)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.jsdt.web.ui.internal.validation.JavascriptValidationStrategy.reconcile(JavascriptValidationStrategy.java:103)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.JavascriptValidationStrategy.reconcile(JavascriptValidationStrategy.java:96)
+	at org.eclipse.wst.jsdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:85)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:98)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.wst.jsdt.internal.ui.text.JavaReconciler.process(JavaReconciler.java:374)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+!SESSION 2019-02-06 08:53:27.765 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.javascript.product -keyring /Users/Love/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-02-06 08:53:38.121
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

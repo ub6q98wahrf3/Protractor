@@ -1,0 +1,26 @@
+/**
+ * We have a method, called as "all" that we will see in this code
+ */
+
+describe('All Method Implementation', function(){
+	it('Test Script 1', function(){
+		/*1*/
+		browser.get("http://juliemr.github.io/protractor-demo");
+		
+		/*2*/
+		element(by.model("first")).sendKeys("2");
+		element(by.model("second")).sendKeys("3");
+		
+		/*3*/
+		element(by.id("gobutton")).click();
+		
+		/*4. NEW
+		 * Enter 2 + 3
+		 * Enter 2+4
+		 * Enter 2+5
+		 * 
+		 * Get the results of all the 3 calculations from the result table column and display on the console.
+		 */
+		
+	})
+})

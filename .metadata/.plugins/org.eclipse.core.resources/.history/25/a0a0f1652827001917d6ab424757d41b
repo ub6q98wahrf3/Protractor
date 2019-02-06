@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+
+describe('Chain Locators', function(){
+	it('Test Script 1', function(){
+		
+		/*
+		 * Get navigated to the following site: https://jasmine.github.io/2.0/introduction.html
+		 */
+		browser.get("http://juliemr.github.io/protractor-demo");
+		
+		/*
+		 * Enter first operand in the first text field
+		 */
+		element(By.model("first")).sendKeys("2");
+		
+		/*
+		 * Enter second operand in the second text field
+		 */
+		element(By.model("second")).sendKeys("3");
+		
+		/*
+		 * Click on the Go button
+		 */
+		element(By.id("gobutton")).click(); 
+		
+		/*
+		 * Wait for the results to be calculated and displayed under
+		 */
+	})
+})

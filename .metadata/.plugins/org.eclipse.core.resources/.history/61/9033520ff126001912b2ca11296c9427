@@ -1,0 +1,7 @@
+/**
+ * This file is used to run all the specs we want to execute.
+ */
+exports.config = {
+		seleniumAddress: 'http://localhost:4444/wd/hub',
+		specs: ['_01_FirstSourceFile_spec1.js']
+};

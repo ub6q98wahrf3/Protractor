@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+
+describe('Dummy', function(){
+	it('Dummy 1', function(){
+		/*1*/
+		browser.get("http://juliemr.github.io/protractor-demo");
+		
+		/*2*/
+		element(by.model("first")).sendKeys("2");
+		element(by.model("second")).sendKeys("3");
+		
+		element(by.id("gobutton")).click();
+		
+		/*3: Display the result that is getting isplaye under the result column*/
+		element(by.repeater("result in memory")).element(by.css("td:nth-child(3)")).getText().then(function(text){
+			console.log(text);
+		})
+		
+		element(by.model("first")).sendKeys("2");
+		element(by.model("second")).sendKeys("3");
+		
+		element(by.id("gobutton")).click();
+		
+		element(by.model("first")).sendKeys("2");
+		element(by.model("second")).sendKeys("3");
+		
+		element(by.id("gobutton")).click();
+		
+		/*4: Display the total number of values that are getting didplayd under the result column*/
+		element.all(by.repeater("result in memory")).count().then(function(totalElements){
+			console.log(totalElements);
+		})
+	})
+})
